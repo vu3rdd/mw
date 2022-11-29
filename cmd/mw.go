@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	
 	"leastauthority.com/mwng/order"
 	"leastauthority.com/mwng/key"
 )
@@ -19,4 +17,5 @@ func main() {
 
 	// fmt.Printf("%s\n", sortedKeyMachine.ToGraph())
 	sortedKeyMachine.Fire(key.TriggerGotCode, "4-purple-sausages", "appID")
+	sortedKeyMachine.Fire(key.TriggerGotPakeGood, []byte{21,22,23,24}, "side")
 }
